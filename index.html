@@ -46,31 +46,39 @@
                     </div>
                     <form class="form">
                         <h2 class="head-modal">Оставьте свои данные, мы вам перезвоним</h2>
-                        <ul>
-                            <li class="form-field">
-                                <label for="name" class="form-label">Имя</label>
-                                <input class="form-input" type="text" name="name" id="name">
-                            </li>
-                            <li class="form-field">
-                                <label class="form-label" for="tel">Телефон</label>
-                                <input class="form-input" type="tel" name="tel" id="tel">
-                            </li>
-                            <li class="form-field">
-                                <label class="form-label" for="mail">Почта</label>
-                                <input class="form-input" type="email" name="mail" id="mail">
-                            </li>
-                            <li class="form-field">
-                                <label class="form-label" for="comment">Комментарий</label>
-                                <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
-                            </li>
-                            <li class="form-consert check">
-                                <input class="checkbox" type="checkbox" name="consert" id="consert">
-                                <label class="consent" for="consert">
-                                <span class="checkbox-icon"></span>
-                                Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-                            </li>
-                            <li><button class="button-order" type="submit">Отправить</button></li>
-                        </ul>
+                        <label class="form-field">
+                            <span class="form-label">Имя</span>
+                            <input class="form-input" type="text" name="name">
+                            <svg class="icon-modal"><use href="./images/icons.svg#icon-person-black" width="18" height="18"></use></svg>
+                        </label>
+                        <label class="form-field">
+                            <span class="form-label">Телефон</span>
+                            <input class="form-input" type="tel" name="tel">
+                            <svg class="icon-modal">
+                                <use href="./images/icons.svg#icon-phone-black" width="18" height="18"></use>
+                            </svg>
+                        </label>
+                        <label class="form-field">
+                            <span class="form-label">Почта</span>
+                            <input class="form-input" type="email" name="mail">
+                            <svg class="icon-modal">
+                                    <use href="./images/icons.svg#icon-email-black" width="18" height="18"></use>
+                            </svg>
+                        </label>
+                        <label class="form-field">
+                            <span class="form-label">Комментарий</span>
+                            <textarea class="comment" name="comment" placeholder="Введите текст"></textarea>
+                        </label>
+                        <div class="form-consert check">
+                            <label class="consent">
+                                <input class="checkbox" type="checkbox" name="consert">
+                                <svg class="icon-check">
+                                    <use href="./images/icons.svg#icon-icon-check"></use>
+                                </svg>
+                                Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                            </label>
+                        </div>
+                        <div><button class="button-order" type="submit">Отправить</button></div>
                     </form>
                 </div>
             </div>
@@ -371,9 +379,17 @@
                 </ul>
             </section>
             <form class="newsletter">
-                <label for="email" class="connect">Подпишитесь на рассылку</label>
-                <input type="text" name="email" id="email" placeholder="E-mail"/>
-                <button type="submit">Подписаться</button>
+                <h2 class="connect">Подпишитесь на рассылку</h2>
+                <div class="subscribe">
+                    <label for="email-2">
+                        <input class="input-email" type="text" name="email-2" placeholder="E-mail" id="email-2"/>
+                    </label>
+                    <button class="button-order btn-subscribe" type="submit">Подписаться
+                        <svg class="icon-send">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
             </form>
         </div>
     </footer>
